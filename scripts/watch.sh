@@ -9,6 +9,19 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+# 单实例保护：同一目录只允许一个 watcher
+PIDFILE="$PWD/.tools/watch.pid"
+mkdir -p "$PWD/.tools"
+if [ -f "$PIDFILE" ]; then
+  OLDPID="$(cat "$PIDFILE" 2>/dev/null || true)"
+  if [ -n "$OLDPID" ] && kill -0 "$OLDPID" 2>/dev/null; then
+    echo "✓ watcher 已在运行（PID $OLDPID）"
+    exit 0
+  fi
+fi
+echo $$ > "$PIDFILE"
+trap 'rm -f "$PIDFILE"' EXIT INT TERM
+
 export RESERVOIR_PUSH="${WATCH_PUSH:-0}"
 
 FSWATCH_BIN="${FSWATCH_BIN:-}"

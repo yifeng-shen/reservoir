@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T16:23:22Z",
+  "generated_at": "2026-10-31T16:25:08Z",
   "counts": {
     "files": 28,
     "placeholders": 347

@@ -121,6 +121,17 @@ def main():
         print("✓ index.json 已是最新（%d 个文件）" % payload["counts"]["files"])
         return 0
 
+    # 内容没变时保留原时间戳，避免每日快照产生空提交
+    if OUT.exists():
+        try:
+            current = json.loads(OUT.read_text(encoding="utf-8"))
+            if (current.get("files") == payload["files"]
+                    and current.get("counts") == payload["counts"]
+                    and current.get("generated_at")):
+                payload["generated_at"] = current["generated_at"]
+        except (OSError, ValueError):
+            pass
+
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("✓ 已生成 index.json：%d 个文件，%d 个占位符" % (
         payload["counts"]["files"], payload["counts"]["placeholders"]))

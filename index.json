@@ -2,10 +2,10 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T16:25:08Z",
+  "generated_at": "2026-10-31T16:55:04Z",
   "counts": {
     "files": 28,
-    "placeholders": 347
+    "placeholders": 326
   },
   "by_tag": {
     "AI-READONLY": 14,
@@ -172,12 +172,12 @@
       "id": "identity/profile",
       "ai_tag": "AI-READONLY",
       "title": "个人身份核心信息",
-      "summary": "个人身份核心信息：我是谁、做什么、在哪、如何被称呼",
-      "updated": "2026-10-31",
+      "summary": "个人身份核心信息：民宿连锁品牌 CEO，常驻昆明/绍兴，程序员出身、创业十年",
+      "updated": "2026-11-01",
       "tags": [],
-      "bytes": 1833,
-      "sha256": "cf6c94ab658fcb3e",
-      "placeholders": 21,
+      "bytes": 2117,
+      "sha256": "ea07ddc4d5006797",
+      "placeholders": 0,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/identity/profile.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/identity/profile.md"
     },

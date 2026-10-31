@@ -16,6 +16,8 @@ echo "  ✓ Python 可用"
 
 if command -v fswatch >/dev/null 2>&1; then
   echo "  ✓ fswatch 已安装，可使用 ./scripts/watch.sh"
+elif [ -x "$PWD/.tools/bin/fswatch" ]; then
+  echo "  ✓ 使用工作区内的 fswatch（.tools/bin/fswatch），可使用 ./scripts/watch.sh"
 else
   echo "  ⚠ 未安装 fswatch；需要自动监听时运行：brew install fswatch"
 fi

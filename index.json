@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:09:31Z",
+  "generated_at": "2026-10-31T17:14:22Z",
   "counts": {
     "files": 28,
     "placeholders": 321
@@ -259,8 +259,8 @@
       "summary": "AI 写入缓冲区：原始观察、建议与待确认偏好",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 3231,
-      "sha256": "c0fa2416c25bac99",
+      "bytes": 3675,
+      "sha256": "ca9e7b3c7832e09c",
       "placeholders": 2,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/inbox.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/inbox.md"

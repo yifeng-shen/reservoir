@@ -74,3 +74,11 @@ summary: "AI 写入缓冲区：原始观察、建议与待确认偏好"
 - **边界**：不要由 AI 推测填写，需本人访谈确认
 - **来源**：AI 自查
 - **置信度**：高
+
+### 2026-11-01 · 启用本地自动提交
+- **场景**：安装 fswatch 并启用 scripts/watch.sh
+- **结论**：使用 Homebrew macOS 26（Tahoe）bottle 的 fswatch；watch.sh 默认只本地提交，设置 WATCH_PUSH=1 才推送
+- **原因**：本机 Homebrew 4.4.8 不识别 macOS 26.5；自动推送需要凭据
+- **边界**：watcher 仅在本次会话运行，重启后需重新启动
+- **来源**：人工 + AI
+- **置信度**：高

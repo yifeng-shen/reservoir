@@ -6,6 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 MSG="${1:-chore(sync): $(date '+%Y-%m-%d %H:%M')}"
+PUSH="${RESERVOIR_PUSH:-1}"
 
 if ! git rev-parse --git-dir >/dev/null 2>&1; then
   echo "✗ 当前目录不是 Git 仓库" >&2
@@ -27,6 +28,11 @@ fi
 
 echo "→ 提交：$MSG"
 git commit -m "$MSG"
+
+if [ "$PUSH" != "1" ]; then
+  echo "✓ 已本地提交（未推送；设置 RESERVOIR_PUSH=1 可推送）"
+  exit 0
+fi
 
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 if git remote get-url origin >/dev/null 2>&1; then

@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:00:13Z",
+  "generated_at": "2026-10-31T17:00:53Z",
   "counts": {
     "files": 28,
     "placeholders": 321
@@ -354,11 +354,11 @@
       "id": "workflow/communication",
       "ai_tag": "AI-EDIT",
       "title": "沟通风格与输出偏好",
-      "summary": "沟通风格：事实优先、客观直接，核心问题直出犹豫点",
+      "summary": "沟通风格：事实优先、客观直接，核心问题直出犹豫点；证据不足时分场景处理",
       "updated": "2026-11-01",
       "tags": [],
-      "bytes": 3678,
-      "sha256": "ba9e5ac92778b1f4",
+      "bytes": 4015,
+      "sha256": "d1d1751e845bd7f3",
       "placeholders": 5,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/communication.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/workflow/communication.md"

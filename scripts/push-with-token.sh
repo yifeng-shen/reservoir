@@ -213,7 +213,7 @@ push_repo() {
     return 1
   fi
 
-  echo "→ $name：检查远端…"
+  echo "→ ${name}：检查远端…"
   if ! git_net fetch -q origin main; then
     echo "✗ $name 拉取远端失败：token 无权限或网络不通" >&2
     return 1
@@ -225,7 +225,7 @@ push_repo() {
     return 0
   fi
 
-  echo "→ $name：推送 $ahead 个提交…"
+  echo "→ ${name}：推送 $ahead 个提交…"
   local out
   if ! out="$(git_net push origin main 2>&1)"; then
     printf '%s\n' "$out" | tail -8

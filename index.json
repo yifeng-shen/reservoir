@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:29:07Z",
+  "generated_at": "2026-10-31T18:27:46Z",
   "counts": {
     "files": 34,
     "placeholders": 518
@@ -175,8 +175,8 @@
       "summary": "个人身份核心信息：民宿连锁品牌 CEO，常驻昆明/绍兴，程序员出身、创业十年",
       "updated": "2026-11-01",
       "tags": [],
-      "bytes": 2117,
-      "sha256": "ea07ddc4d5006797",
+      "bytes": 2195,
+      "sha256": "2e50911f80f2a9b3",
       "placeholders": 0,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/identity/profile.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/identity/profile.md"
@@ -343,8 +343,8 @@
       "summary": "AI 写入缓冲区：原始观察、建议与待确认偏好",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 3675,
-      "sha256": "ca9e7b3c7832e09c",
+      "bytes": 3669,
+      "sha256": "14da0d94e4084450",
       "placeholders": 2,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/inbox.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/inbox.md"

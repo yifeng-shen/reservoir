@@ -90,4 +90,4 @@ echo "→ 配置标签保护（snapshot/*）…"
 upsert_ruleset "$TAG_RULESET" "reservoir-tag-guard"
 
 echo "✓ 安全配置完成。查看："
-echo "  curl -s ${AUTH[*]} ${API}/rulesets"
+echo "  curl -s -H \"Authorization: Bearer \$GITHUB_TOKEN\" ${API}/rulesets"

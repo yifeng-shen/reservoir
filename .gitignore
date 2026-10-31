@@ -1,0 +1,27 @@
+# 本地导出与快照
+dist/
+*.snapshot.md
+
+# 凭据与隐私
+.env
+.env.*
+private/
+secrets/
+*.pem
+*.key
+
+# 工具链
+.tools/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# 本地 AI 会话缓存
+.ai-cache/

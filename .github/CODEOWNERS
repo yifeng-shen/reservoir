@@ -1,0 +1,14 @@
+# Reservoir 仓库所有者
+# 语法见 https://docs.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+*                       @yifeng-shen
+
+# 身份事实层：只允许本人修改
+/identity/              @yifeng-shen
+/README.md              @yifeng-shen
+/AGENTS.md              @yifeng-shen
+/ai-integration.md      @yifeng-shen
+
+# 记忆层：AI 可追加，最终审核归本人
+/memory/                @yifeng-shen
+/archive/               @yifeng-shen

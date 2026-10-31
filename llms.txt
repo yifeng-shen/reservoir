@@ -1,0 +1,43 @@
+# Reservoir — 个人记忆水库
+
+> yifeng-shen 的跨 AI、跨设备个人记忆系统。所有 AI 从这里读取同一份身份、习惯、偏好、决策与技能记录。
+
+本仓库是纯 Markdown + YAML Frontmatter 的公开知识库。任何支持读取 URL、克隆 Git 仓库或调用 GitHub API 的 AI/Agent 都可以直接使用，无需格式转换。
+
+## 入口
+
+- [AGENTS.md](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/AGENTS.md)：AI 协作契约（先读这个）
+- [README.md](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/README.md)：人类使用说明
+- [ai-integration.md](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/ai-integration.md)：各平台接入配置
+- [index.json](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/index.json)：机器可读文件清单
+
+## 核心档案
+
+- [个人身份](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/identity/profile.md)：身份、职业、时区、标签
+- [职业画像](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/identity/career.md)：经历、能力、方向
+- [人生目标](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/identity/goals.md)：长期方向与阶段目标
+- [沟通风格](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/communication.md)：语气、长度、格式偏好
+- [优先级规则](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/priorities.md)：决策原则与取舍
+- [工具栈](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/tools.md)：常用工具与替代方案
+- [工作习惯](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/habits.md)：节奏、专注、复盘
+
+## 记忆与技能
+
+- [AI 偏好](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/preferences.md)：已被验证的协作偏好
+- [决策记录](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/decisions.md)：重要决策及其理由
+- [经验教训](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/experiences.md)：可复用的经验
+- [收件箱](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/inbox.md)：AI 写入缓冲区
+- [已掌握技能](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/skills/mastered.md)：技能矩阵
+- [学习计划](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/skills/learning-plan.md)：在学内容与里程碑
+
+## 使用约定
+
+- 只读文件：`identity/`、根文档、`schema/`
+- 仅追加：`memory/`、`archive/`
+- 可编辑：`workflow/`、`skills/`
+- 写入协议、条目格式、提交规范见 [AGENTS.md](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/AGENTS.md)
+
+## 可选
+
+- [MCP Server](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/mcp/server.py)：为 Agent 提供读写工具
+- [ChatGPT Actions 配置](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/integrations/openai-actions.openapi.yaml)：通过 GitHub API 读取

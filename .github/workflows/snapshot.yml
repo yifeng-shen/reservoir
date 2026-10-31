@@ -1,0 +1,55 @@
+name: snapshot
+
+on:
+  schedule:
+    # 每天 18:00 UTC = 次日 02:00 Asia/Shanghai
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reservoir-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Rebuild index
+        run: python3 scripts/build_index.py
+
+      - name: Commit index if changed
+        run: |
+          if ! git diff --quiet -- index.json; then
+            git add index.json
+            git commit -m "chore(index): rebuild [skip ci]"
+            git push origin HEAD:main
+          fi
+
+      - name: Create and push snapshot tag
+        run: |
+          TAG="snapshot/$(date -u +%Y-%m-%d)"
+          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+            TAG="${TAG}-$(date -u +%H%M)"
+          fi
+          git tag -a "${TAG}" -m "Daily snapshot ${TAG}"
+          git push origin "${TAG}"
+          echo "✓ Created ${TAG}"

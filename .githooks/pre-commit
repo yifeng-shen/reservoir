@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# 提交前校验：结构、标签、敏感信息。
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+if [ -f scripts/validate.py ]; then
+  python3 scripts/validate.py
+fi

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/yifeng-shen/reservoir/schema/memory-entry.schema.json",
+  "title": "Reservoir Memory Entry",
+  "description": "AI 写入 memory/inbox.md 或 memory/decisions.md 时的结构化条目格式。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["date", "title", "scenario", "conclusion", "source", "confidence"],
+  "properties": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "条目日期，ISO 8601"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "一句话标题，可检索"
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 5,
+      "description": "在什么任务或对话中发生"
+    },
+    "conclusion": {
+      "type": "string",
+      "minLength": 5,
+      "description": "可复用的事实、偏好或决策"
+    },
+    "reason": {
+      "type": "string",
+      "description": "为什么，背后的原则"
+    },
+    "boundary": {
+      "type": "string",
+      "description": "什么情况下不适用"
+    },
+    "source": {
+      "type": "string",
+      "description": "来源平台或「人工」",
+      "examples": ["ChatGPT", "Claude", "Gemini", "Cursor", "人工"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["高", "中", "低"]
+    }
+  }
+}

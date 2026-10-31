@@ -1,0 +1,125 @@
+openapi: 3.1.0
+info:
+  title: Reservoir Reader
+  version: 1.0.0
+  description: |
+    读取 yifeng-shen 的 Reservoir 个人记忆仓库。
+    所有接口均为只读，直接返回 Markdown / JSON 原文，无需认证。
+    数据源：https://github.com/yifeng-shen/reservoir
+  contact:
+    name: yifeng-shen
+    url: https://github.com/yifeng-shen/reservoir
+servers:
+  - url: https://raw.githubusercontent.com/yifeng-shen/reservoir/main
+    description: main 分支最新内容
+paths:
+  /identity/profile.md:
+    get:
+      operationId: getIdentityProfile
+      summary: 读取个人身份核心信息（姓名、职业、城市、时区、标签、边界）
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /identity/tags.md:
+    get:
+      operationId: getIdentityTags
+      summary: 读取核心标签、检索关键词与反标签
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /workflow/communication.md:
+    get:
+      operationId: getCommunicationStyle
+      summary: 读取沟通风格、语气、回答长度与格式偏好
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /workflow/priorities.md:
+    get:
+      operationId: getPriorities
+      summary: 读取优先级规则与核心决策原则
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /memory/preferences.md:
+    get:
+      operationId: getPreferences
+      summary: 读取已验证的 AI 协作偏好
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /memory/decisions.md:
+    get:
+      operationId: getDecisions
+      summary: 读取历史重要决策及复盘
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /memory/inbox.md:
+    get:
+      operationId: getMemoryInbox
+      summary: 读取 AI 写入的待整理记忆
+      responses:
+        "200":
+          description: Markdown 文本
+          content:
+            text/plain:
+              schema:
+                type: string
+  /index.json:
+    get:
+      operationId: getFileIndex
+      summary: 获取仓库全部档案的机器可读索引（路径、标签、摘要、raw 地址）
+      responses:
+        "200":
+          description: JSON 索引
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  schema:
+                    type: string
+                  repository:
+                    type: string
+                  counts:
+                    type: object
+                  files:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        path:
+                          type: string
+                        title:
+                          type: string
+                        summary:
+                          type: string
+                        ai_tag:
+                          type: string
+                        raw_url:
+                          type: string

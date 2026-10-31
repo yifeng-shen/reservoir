@@ -42,3 +42,12 @@ summary: "历史项目索引：背景、角色、结果、复盘"
 ## 追加区
 
 <!-- 新项目从这一行下方追加，最新的在上方。 -->
+
+### 2026 · Reservoir 个人记忆系统
+- **背景**：多个 AI 平台各自记忆，换设备或换模型就要重新解释自己
+- **我的角色**：需求定义、内容审核与验收；AI 负责搭建、文档与自动化
+- **做法**：GitHub 公开仓库；identity / workflow / memory / skills / archive 五目录；YAML frontmatter + AI 权限标签；inbox 两段式记忆；MCP Server + ChatGPT Actions；Ruleset + 每日快照
+- **结果**：仓库上线，52 个受控文件；validate 与 snapshot 均通过；身份与沟通规则已入库
+- **难点**：公开仓库的隐私边界；GitHub 网络与 OAuth 授权；AI 写回权限与令牌安全
+- **复盘**：先跑通最小可用骨架，再逐目录补内容；不要一次追求全量
+- **链接**：https://github.com/yifeng-shen/reservoir

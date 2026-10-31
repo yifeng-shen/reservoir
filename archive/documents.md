@@ -54,3 +54,12 @@ summary: "重要文档与外部资料索引"
 ## 追加区
 
 <!-- 新文档从这一行下方追加。 -->
+
+### 2026-11-01 · Reservoir 核心文档索引
+- [README](../README.md) —— 使用说明、目录导航、维护节奏
+- [AGENTS.md](../AGENTS.md) —— AI 协作契约、读写权限、记忆条目格式
+- [ai-integration.md](../ai-integration.md) —— ChatGPT / Claude / Gemini / Agent 平台接入配置
+- [integrations/openai-actions.openapi.yaml](../integrations/openai-actions.openapi.yaml) —— ChatGPT Custom GPT Actions 配置
+- [mcp/server.py](../mcp/server.py) —— 本地 MCP Server，提供读 / 搜 / 追加 / 记决策工具
+- [scripts/rollback.sh](../scripts/rollback.sh) —— 历史查看与回退
+- [index.json](../index.json) —— 机器可读文件清单

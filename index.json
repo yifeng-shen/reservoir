@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:01:15Z",
+  "generated_at": "2026-10-31T17:04:31Z",
   "counts": {
     "files": 28,
     "placeholders": 321
@@ -91,8 +91,8 @@
       "summary": "已完成任务流水与阶段总结",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1120,
-      "sha256": "1c03af885a0b92dd",
+      "bytes": 1678,
+      "sha256": "941180fa54d83ec1",
       "placeholders": 4,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/archive/completed-tasks.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/archive/completed-tasks.md"
@@ -105,8 +105,8 @@
       "summary": "重要文档与外部资料索引",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1241,
-      "sha256": "3a970a5de3cdd10a",
+      "bytes": 1931,
+      "sha256": "220b6fa39ff7bb96",
       "placeholders": 13,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/archive/documents.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/archive/documents.md"
@@ -119,8 +119,8 @@
       "summary": "历史项目索引：背景、角色、结果、复盘",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1157,
-      "sha256": "73e05d8aa5843a2a",
+      "bytes": 1974,
+      "sha256": "f3a934e2676bb0a2",
       "placeholders": 10,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/archive/projects.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/archive/projects.md"
@@ -231,8 +231,8 @@
       "summary": "重要决策的背景、选项、理由与复盘",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1900,
-      "sha256": "5f6e7035459d5ea2",
+      "bytes": 2337,
+      "sha256": "46b2b2ff67fe11b8",
       "placeholders": 3,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/decisions.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/decisions.md"
@@ -245,8 +245,8 @@
       "summary": "可复用的经验与踩坑教训",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1273,
-      "sha256": "3034bbb89138a60e",
+      "bytes": 2484,
+      "sha256": "37fa2b110f13c7cd",
       "placeholders": 3,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/experiences.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/experiences.md"
@@ -259,8 +259,8 @@
       "summary": "AI 写入缓冲区：原始观察、建议与待确认偏好",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 1717,
-      "sha256": "6c8aa07e72d5b86a",
+      "bytes": 3231,
+      "sha256": "c0fa2416c25bac99",
       "placeholders": 2,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/inbox.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/inbox.md"

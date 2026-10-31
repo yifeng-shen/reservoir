@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:04:31Z",
+  "generated_at": "2026-10-31T17:09:31Z",
   "counts": {
     "files": 28,
     "placeholders": 321
@@ -21,8 +21,8 @@
       "summary": "本文件是**所有 AI / Agent 进入本仓库的第一入口**。开始任何任务前先读完本文件。",
       "updated": "",
       "tags": [],
-      "bytes": 4490,
-      "sha256": "716dbc70d94bc134",
+      "bytes": 4735,
+      "sha256": "ba1cb12acc9de905",
       "placeholders": 6,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/AGENTS.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/AGENTS.md"
@@ -49,8 +49,8 @@
       "summary": "这是公开仓库：**不要**写入手机号、住址、身份证、公司机密、API Key 等敏感信息。",
       "updated": "",
       "tags": [],
-      "bytes": 6932,
-      "sha256": "6c05b8a50e7cfa62",
+      "bytes": 7636,
+      "sha256": "ccf6b3b6084bc884",
       "placeholders": 1,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/README.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/README.md"
@@ -63,8 +63,8 @@
       "summary": "本文件说明如何把 `reservoir` 接入 ChatGPT、Claude、Gemini、Cursor 以及各类 Agent 平台，",
       "updated": "",
       "tags": [],
-      "bytes": 15054,
-      "sha256": "abe6ac29117628a3",
+      "bytes": 16719,
+      "sha256": "a69e04de087be177",
       "placeholders": 0,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/ai-integration.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/ai-integration.md"
@@ -231,8 +231,8 @@
       "summary": "重要决策的背景、选项、理由与复盘",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 2337,
-      "sha256": "46b2b2ff67fe11b8",
+      "bytes": 2894,
+      "sha256": "66eb72abf46fffdf",
       "placeholders": 3,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/decisions.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/decisions.md"
@@ -245,8 +245,8 @@
       "summary": "可复用的经验与踩坑教训",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 2484,
-      "sha256": "37fa2b110f13c7cd",
+      "bytes": 2918,
+      "sha256": "ec0cd4c5bd2d64f7",
       "placeholders": 3,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/experiences.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/experiences.md"

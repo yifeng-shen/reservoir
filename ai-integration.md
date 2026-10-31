@@ -387,3 +387,41 @@ gh api repos/yifeng-shen/reservoir/rulesets
 ---
 
 _本文件随协议演进更新；结构性修改请走 PR。_
+
+---
+
+## 9. 公开层与私密层
+
+采用双仓库架构，避免「为了接入方便」牺牲商业隐私。
+
+| 层 | 仓库 | 内容 | 访问方式 |
+| --- | --- | --- | --- |
+| 公开层 | `yifeng-shen/reservoir` | 身份、沟通、通用偏好、可公开结论 | raw URL / GitHub API，免授权 |
+| 私密层 | `yifeng-shen/reservoir-private` | 战略、财务、人事、合作方、未公开项目 | 私有仓库，PAT / 本地克隆 |
+
+### 接入规则
+
+1. 公开层 AI 只读公开内容；涉及战略、财务、人事、合作方时，切换到私密层。
+2. 私密层**禁止**使用 raw URL 或公开 Actions；只能通过本地克隆 + 文件读取，或带权限的 GitHub API。
+3. 任何情况下不得把私密层内容复制到公开层；跨层引用只写「见私密层」，不写具体内容。
+4. 私密层提交信息不写金额、人名、公司名，用代号。
+5. 公开层不出现私密仓库的可访问链接与令牌。
+
+### 私密层本地读取
+
+```bash
+git clone git@github.com:yifeng-shen/reservoir-private.git ~/private/reservoir-private
+```
+
+Claude Code / Cursor 直接把该目录加入工作区；不要给公开层的 MCP Server 指向私密层（公开层 MCP 只覆盖 identity / workflow / memory / skills / archive 五个目录）。
+
+### 路由速查
+
+| 内容 | 去哪 |
+| --- | --- |
+| 身份、沟通、通用偏好 | 公开层 |
+| 战略、赌注、未公开目标 | 私密层 `strategy/` |
+| 财务、单位经济模型 | 私密层 `finance/` |
+| 组织、人事、绩效 | 私密层 `people/` |
+| 合作方、合同、渠道 | 私密层 `partners/` |
+| 可公开的项目复盘 | 公开层 `archive/` |

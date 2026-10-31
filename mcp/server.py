@@ -27,7 +27,7 @@ ROOT = Path(
     os.environ.get("RESERVOIR_ROOT") or Path(__file__).resolve().parent.parent
 ).resolve()
 
-READABLE_DIRS = ("identity", "workflow", "memory", "skills", "archive")
+READABLE_DIRS = ("identity", "workflow", "memory", "skills", "archive", "knowledge")
 READABLE_ROOT_FILES = ("README.md", "AGENTS.md", "CLAUDE.md", "ai-integration.md", "llms.txt", "index.json")
 READABLE_SUFFIXES = (".md", ".json", ".txt", ".yaml", ".yml")
 

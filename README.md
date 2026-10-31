@@ -70,6 +70,7 @@ python3 scripts/build_index.py
 | [`memory/`](memory/README.md) | 决策、经验、偏好、对话沉淀 | 追加 | [inbox.md](memory/inbox.md) |
 | [`skills/`](skills/README.md) | 已掌握技能、学习计划、待提升 | 可编辑 | [mastered.md](skills/mastered.md) |
 | [`archive/`](archive/README.md) | 历史项目、文档、已完成任务 | 追加 | [projects.md](archive/projects.md) |
+| [`knowledge/`](knowledge/README.md) | 可公开的 OTA 运营知识、行业方法 | 可编辑 | [ota/platforms.md](knowledge/ota/platforms.md) |
 | [`mcp/`](mcp/README.md) | 本地 MCP Server，给 Agent 提供读写工具 | 代码 | [server.py](mcp/server.py) |
 | [`integrations/`](integrations/) | ChatGPT Actions 等平台适配配置 | 只读 | [openai-actions.openapi.yaml](integrations/openai-actions.openapi.yaml) |
 

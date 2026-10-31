@@ -24,7 +24,8 @@ STAMP="$(date '+%Y-%m-%d %H:%M %Z')"
            workflow/communication.md workflow/priorities.md workflow/tools.md workflow/habits.md \
            memory/preferences.md memory/decisions.md memory/experiences.md \
            skills/mastered.md skills/learning-plan.md skills/backlog.md \
-           archive/projects.md; do
+           archive/projects.md \
+           knowledge/README.md knowledge/ota/*.md; do
     [ -f "$f" ] || continue
     echo "<!-- ===== ${f} ===== -->"
     echo

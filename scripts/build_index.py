@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "index.json"
-DOC_DIRS = ("identity", "workflow", "memory", "skills", "archive")
+DOC_DIRS = ("identity", "workflow", "memory", "skills", "archive", "knowledge")
 ROOT_DOCS = ("README.md", "AGENTS.md", "CLAUDE.md", "ai-integration.md", "llms.txt")
 RAW_BASE = "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/"
 REPO_URL = "https://github.com/yifeng-shen/reservoir"
@@ -82,7 +82,7 @@ def collect():
         base = ROOT / d
         if not base.exists():
             continue
-        for path in sorted(base.glob("*.md")):
+        for path in sorted(base.rglob("*.md")):
             files.append(entry_for(path))
     files.sort(key=lambda item: item["path"])
     payload = {

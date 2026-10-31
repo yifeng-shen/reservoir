@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DOC_DIRS = ("identity", "workflow", "memory", "skills", "archive")
+DOC_DIRS = ("identity", "workflow", "memory", "skills", "archive", "knowledge")
 VALID_TAGS = {"AI-READONLY", "AI-APPEND", "AI-EDIT", "AI-GENERATED"}
 REQUIRED_KEYS = ("schema", "id", "ai_tag", "updated")
 PLACEHOLDER_RE = re.compile(r"\{\{([^{}]+)\}\}")
@@ -60,7 +60,7 @@ def iter_content_files():
         base = ROOT / d
         if not base.exists():
             continue
-        for path in sorted(base.glob("*.md")):
+        for path in sorted(base.rglob("*.md")):
             if path.name != "README.md":
                 yield path
 

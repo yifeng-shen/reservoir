@@ -41,7 +41,7 @@ PREFIX="${1:-chore(watch)}"
 echo "监听中…（Ctrl+C 停止；自动推送：$([ "$RESERVOIR_PUSH" = "1" ] && echo 开 || echo 关)）"
 
 "$FSWATCH_BIN" -o -l 2 \
-  identity workflow memory skills archive \
+  identity workflow memory skills archive knowledge \
   README.md AGENTS.md CLAUDE.md ai-integration.md llms.txt index.json \
   | while read -r _; do
       if [ -n "$(git status --porcelain)" ]; then

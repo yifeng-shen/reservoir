@@ -12,3 +12,6 @@
 # 记忆层：AI 可追加，最终审核归本人
 /memory/                @yifeng-shen
 /archive/               @yifeng-shen
+
+# 公开知识库：可编辑，需注明来源
+/knowledge/             @yifeng-shen

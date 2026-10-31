@@ -7,7 +7,7 @@
 ## 1. 这个仓库是什么
 
 `reservoir` 是维护者的个人记忆系统，也是你（AI）了解他的**唯一事实来源**。
-它不存放代码项目，只存放关于「人」的结构化 Markdown。
+它不存放代码项目，只存放关于「人」与可公开行业知识的结构化 Markdown。
 
 优先级从高到低：
 
@@ -15,7 +15,8 @@
 2. `workflow/` —— 他怎么工作、怎么沟通（可编辑）
 3. `memory/` —— 他做过什么决定、踩过什么坑、偏好什么（追加）
 4. `skills/` —— 他会什么、在学什么（可编辑）
-5. `archive/` —— 历史项目与文档（追加）
+5. `knowledge/` —— 可公开的行业知识与方法（可编辑）
+6. `archive/` —— 历史项目与文档（追加）
 
 ## 2. 读取顺序
 
@@ -25,7 +26,8 @@
 2. `workflow/communication.md` + `workflow/priorities.md`（必读）
 3. 与任务相关的 `workflow/tools.md`、`skills/mastered.md`
 4. 需要历史上下文时：`memory/preferences.md` → `memory/decisions.md` → `memory/experiences.md`
-5. 需要项目背景时：`archive/projects.md`
+5. 需要行业知识时：`knowledge/ota/` 下与任务相关的文件
+6. 需要项目背景时：`archive/projects.md`
 
 线上读取用 raw 地址：
 
@@ -39,7 +41,7 @@ https://raw.githubusercontent.com/yifeng-shen/reservoir/main/<path>
 | --- | --- | --- | --- |
 | `AI-READONLY` | `identity/**`、`README.md`、`AGENTS.md`、`schema/**` | ❌ 禁止 | 发现错误只能写入 `memory/inbox.md` 并注明「建议更正 identity/xxx」 |
 | `AI-APPEND` | `memory/**`、`archive/**` | ✅ 仅追加 | 只能插入到文末 `## 追加区` 之下，**不得修改、重排、删除任何已有内容** |
-| `AI-EDIT` | `workflow/**`、`skills/**` | ✅ 可编辑 | 保留原意；同步更新 frontmatter 的 `updated` 与文末「变更记录」 |
+| `AI-EDIT` | `workflow/**`、`skills/**`、`knowledge/**` | ✅ 可编辑 | 保留原意；同步更新 frontmatter 的 `updated` 与文末「变更记录」 |
 | `AI-GENERATED` | `index.json`、`dist/**` | ❌ 禁止 | 由脚本生成 |
 
 禁止行为：
@@ -59,6 +61,7 @@ https://raw.githubusercontent.com/yifeng-shen/reservoir/main/<path>
    - 沟通偏好变化 → `memory/preferences.md`（追加）
    - 工具/习惯变化 → `workflow/tools.md`、`workflow/habits.md`（编辑）
    - 技能进展 → `skills/mastered.md`、`skills/learning-plan.md`（编辑）
+   - 行业知识补充 → `knowledge/ota/`（编辑，注明来源与日期）
 4. **提交**（如果具备写权限）：
 
 ```bash

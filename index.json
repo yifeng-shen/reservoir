@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:28:22Z",
+  "generated_at": "2026-10-31T17:28:27Z",
   "counts": {
     "files": 34,
     "placeholders": 518
@@ -287,8 +287,8 @@
       "summary": "yifeng-shen 的跨 AI、跨设备个人记忆系统。所有 AI 从这里读取同一份身份、习惯、偏好、决策与技能记录。",
       "updated": "",
       "tags": [],
-      "bytes": 3094,
-      "sha256": "0cc1c6a5a13035dd",
+      "bytes": 4015,
+      "sha256": "d0c5278fda14342b",
       "placeholders": 0,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/llms.txt",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/llms.txt"

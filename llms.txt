@@ -30,11 +30,20 @@
 - [已掌握技能](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/skills/mastered.md)：技能矩阵
 - [学习计划](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/skills/learning-plan.md)：在学内容与里程碑
 
+## 公开知识库
+
+- [知识库入口](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/README.md)：公开知识库的边界与目录
+- [OTA 平台规则](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/platforms.md)：入驻、佣金、结算、违规
+- [OTA 流量与转化](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/traffic.md)：搜索排序、流量入口、转化漏斗
+- [OTA 定价与促销](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/pricing.md)：定价模型、价格带、渠道成本口径
+- [OTA 评价管理](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/reviews.md)：评分规则、差评处理
+- [OTA 运营 SOP](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/operations.md)：日 / 周 / 月节奏与数据看板
+
 ## 使用约定
 
 - 只读文件：`identity/`、根文档、`schema/`
 - 仅追加：`memory/`、`archive/`
-- 可编辑：`workflow/`、`skills/`
+- 可编辑：`workflow/`、`skills/`、`knowledge/`
 - 写入协议、条目格式、提交规范见 [AGENTS.md](https://raw.githubusercontent.com/yifeng-shen/reservoir/main/AGENTS.md)
 
 ## 可选

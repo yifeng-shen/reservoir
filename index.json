@@ -2,7 +2,7 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T17:00:53Z",
+  "generated_at": "2026-10-31T17:01:15Z",
   "counts": {
     "files": 28,
     "placeholders": 321
@@ -273,8 +273,8 @@
       "summary": "经过验证的 AI 协作偏好",
       "updated": "2026-10-31",
       "tags": [],
-      "bytes": 2171,
-      "sha256": "35ca00dc114b4305",
+      "bytes": 2620,
+      "sha256": "51b5fe4954edbb6e",
       "placeholders": 11,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/memory/preferences.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/memory/preferences.md"
@@ -354,11 +354,11 @@
       "id": "workflow/communication",
       "ai_tag": "AI-EDIT",
       "title": "沟通风格与输出偏好",
-      "summary": "沟通风格：事实优先、客观直接，核心问题直出犹豫点；证据不足时分场景处理",
+      "summary": "沟通风格：事实优先、客观直接，直出犹豫点，不自我论证",
       "updated": "2026-11-01",
       "tags": [],
-      "bytes": 4015,
-      "sha256": "d1d1751e845bd7f3",
+      "bytes": 4322,
+      "sha256": "b5acd63094ae4222",
       "placeholders": 5,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/workflow/communication.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/workflow/communication.md"

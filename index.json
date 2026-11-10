@@ -2,10 +2,10 @@
   "schema": "reservoir/index/v1",
   "repository": "https://github.com/yifeng-shen/reservoir",
   "branch": "main",
-  "generated_at": "2026-10-31T18:27:46Z",
+  "generated_at": "2026-11-10T01:00:19Z",
   "counts": {
     "files": 34,
-    "placeholders": 518
+    "placeholders": 471
   },
   "by_tag": {
     "AI-READONLY": 15,
@@ -229,11 +229,11 @@
       "ai_tag": "AI-EDIT",
       "title": "OTA 平台规则",
       "summary": "OTA 平台规则：入驻、佣金、结算、活动、违规与平台差异",
-      "updated": "2026-11-01",
+      "updated": "2026-11-09",
       "tags": [],
-      "bytes": 2337,
-      "sha256": "d05b38c743cf5438",
-      "placeholders": 47,
+      "bytes": 5520,
+      "sha256": "8d3f3e86171216b0",
+      "placeholders": 0,
       "raw_url": "https://raw.githubusercontent.com/yifeng-shen/reservoir/main/knowledge/ota/platforms.md",
       "html_url": "https://github.com/yifeng-shen/reservoir/blob/main/knowledge/ota/platforms.md"
     },
